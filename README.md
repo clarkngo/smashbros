@@ -1,24 +1,72 @@
-# README
+# smashbros
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A JSON endpoint for smashbros!
 
-Things you may want to cover:
+This app powers smashbros located [here](https://smashbros-clark-ngo.herokuapp.com/posts.json)
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+## Software requirements
 
-* Configuration
+- Rails 5.2.2 or higher
 
-* Database creation
+- Ruby 2.5.3 or higher
 
-* Database initialization
+- PostgreSQL 10.6 or higher
 
-* How to run the test suite
+## Create Account in GitHub and Heroku
 
-* Services (job queues, cache servers, search engines, etc.)
+<a href="https://github.com/">GitHub</a>
 
-* Deployment instructions
+<a href="https://www.heroku.com/">Heroku</a>
 
-* ...
+## Clone this repository
+```
+git@github.com:clarkngo/smashbros.git
+```
+
+## Navigate to the Rails application
+
+```
+$ cd smashbros
+```
+
+## Create, migrate and seed the database
+
+ ```
+ $ rails db:create
+ $ rails db:migrate
+ $ rails db:seed
+ ```
+
+## Starting the local server
+
+```
+$ rails server
+
+   or
+
+$ rails s
+```
+
+## Production Deployment
+
+  ```
+  $ git push heroku master
+  $ heroku run rails db:migrate
+  $ heroku run rails db:seed
+  ```
+
+## Support
+
+Bug reports and feature requests can be filed with the rest for the Ruby on Rails project here:
+
+* [File Bug Reports and Features](https://github.com/clarkngo/smashbros/issues)
+
+## License
+
+smashbros is released under the [MIT license](https://mit-license.org).
+
+## Copyright
+
+copyright:: (c) Copyright 2018 Clark Jason Ngo. All Rights Reserved.
